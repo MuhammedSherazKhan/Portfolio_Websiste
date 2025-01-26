@@ -1,0 +1,461 @@
+*{
+
+    padding: 0px;
+    margin:0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    /* give only when if horizontol scroll bar is coming */
+    overflow-x: hidden;
+    
+   
+}
+nav{
+    background: linear-gradient(to bottom right,#f25f4c,#ff8906);
+    /* background-image:linear-gradient(to bottom right,#4ca1af,#c4e0e5); */
+    width: 100%;
+    /* height: 80px; */
+    position:fixed;
+    z-index: 100;
+
+}
+nav h1{
+    color:#0f0e17;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
+    display: inline;
+
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 50px;
+    line-height:80px ;
+    
+}
+nav ul li a{
+    color:white;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+a.active,a:hover{
+    /* can i add a:active,a:focus,but will not work properly to focus any tag use js */
+    color: #0f0e17;
+    /* background: linear-gradient(to bottom right,#ff3e9d,#0e1f40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* use above wekit code because the the gradient should applied only to text not its background */
+    /*  1st line:Clipping the Background to the Text: */
+    /* 2nd line:Making the Text Transparent: */
+    transition:0.5s;
+
+}
+/* now go for toggle code in html */
+.toggle{
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: none;
+}
+/* now some apply mediaquery */
+#check{
+    display: none;
+}
+#home{
+    background-color: #0f0e17;
+    /* background-image: linear-gradient(to bottom right,#4ca1af,#c4e0e5); */
+    max-width: 100%;
+    /* orgive:width: 100%; */
+    height:100vh;
+}
+#aboutme{
+    background-color: #004643;
+    /* background-image: radial-gradient(#fdfcfb,#e2d1c3); */
+    /* The radial-gradient function in CSS creates a gradient that radiates outward from a central point. It's useful for creating circular or elliptical gradients.  */
+    max-width: 100%;
+    height: 100vh;
+}
+#skills{
+    background-color: #0f0e17;
+    height: 80vh;
+    max-width: 100%;
+}
+#projects{
+    background-color:#004643 ;
+    max-width: 100%;
+    height: 100vh;
+
+
+}
+#contact{
+    background-color: #0f0e17;
+    max-width: 100%;
+    height: 35vh;
+
+}
+
+/* home section */
+.homeleft{
+    color:#fffffe;
+    }
+.homecontent{
+    position: absolute;
+    top: 200px;
+}
+.icons i{
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+}
+.icons i:hover{
+    /* to get color to text */
+    /* background-color: #f25f4c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    background-color:  #f25f4c;
+    
+} 
+.colored{
+    color:#f25f4c;
+}
+.webdevbr{
+    display:none;
+}
+.homeright img{
+    width: 370px;
+    height: auto;
+    /* give them at last after making all the home content */
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    left: 280px;
+
+}
+.homecontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    left: -150px;
+    
+}
+/* now lets change the size the content in the left side */
+
+.homeleft h3{
+    font-size: 28px;
+}
+.webdev {
+    /* display: inline-block; */
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    
+}
+.homeleft button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 20px;
+    position: relative;
+    left: -20px;
+    background-color: #ff8906;
+   
+}
+.homeleft button a{
+    color: #fffffe;
+    font-size: 20px;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+   
+}
+/* after giving first page go for this */
+#aboutme h1{
+    position: relative;
+    top: 70px;
+    left: 50px;
+    font-size: 50px;
+    color: white;
+}
+.aboutmecontent img{
+    width: 350px;
+    border-radius: 50%;
+    position: relative;
+    left: -70px;
+    border:15px solid #abd1c6;
+
+   }
+   .aboutmecontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:100px;
+   
+   }
+   .aboutmecontent p{
+    font-size: 20px;
+    font-weight: 550;
+    position: relative;
+    left: 50px;
+    width: 900px;
+    color: #abd1c6;
+   }
+ /* skills page */
+ #skills>h1{
+    position: relative;
+    top: 80px;
+    left: 80px;
+    font-size: 50px;
+    color: white;
+ }
+ .box img{
+    font-size: 10px;
+    height: 100px;
+    width: 100px;
+ }
+ .box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(2, 2, 70);
+    border-radius: 10px;
+    box-shadow: 15px 15px 5px  black;
+    /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+ }
+ .boxcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 180px;
+ }
+/* now give below prop in previous section of .box img */
+ .box img{
+    align-self: center;
+   position: relative;
+   top: 25px;
+   left: 50px;
+ }
+ .box h1{
+    color:#ff8906;
+   padding-top: 30px;
+   padding-left: 65px;
+
+ }
+
+ .box3head{
+    position: relative;
+    right: 35px;
+ }
+ .box4head{
+    position: relative;
+    left: 20px;
+ }
+ /* projects page */
+ #projects>h1{
+    position: relative;
+    top: 80px;
+    left: 15px;
+    color: white;
+   
+ }
+ .card{
+    height: 500px;
+    width: 340px;
+    background-color:#f9bc60;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px black;
+
+ }
+
+ .cardcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 120px;
+ }
+ .cardupper{
+    color: black;
+    padding: 20px;
+ }
+ .card h1{
+    color: #e16162;
+    padding-bottom:  10px;
+    position: relative;
+    left: 15px;
+ }
+ .card p{
+    color:white;
+    position: relative;
+    left: 15px;
+ }
+ .card a{
+    color: #e16162;
+    position: relative;
+    left: 15px;
+    top: 25px;
+ }
+ /* contact page */
+ #contact h1{
+    padding: 50px 20px 30px 70px ;
+    color: white;
+ } 
+ .contactcontainer{
+    display: flex;
+    justify-content: space-around;
+ }
+ .contactcontainer h3{
+    color: orangered;
+ }
+ .contactcontainer span{
+    color:#a7a9be ;
+ }
+@media (max-width:500px){
+    .toggle{
+        display: block;
+    }
+
+    ul{
+        position: static;
+        position:absolute;
+        width: 100%;
+        /* height: 100px; */
+        gap: 2px;
+        background-image: linear-gradient(to bottom right,#f25f4c,#ff8906);
+        text-align: center;
+        z-index: 100;
+        display: none;
+        
+
+    }
+    nav ul li{
+        display: block;
+    }
+    #check:checked ~ ul{
+        display: block;
+    }
+    nav{
+        position: static;
+        /* previously was sticky */
+    }
+   #home{
+    height: 120vh;
+
+   }
+   .homecontent{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .homeright img{
+    position: relative;
+    top: -150px;
+    width: 300;
+    /* before width was 370px */
+    left: 150px;
+   }
+   .homeleft{
+    position: relative;
+    top: -150px;
+    left: 160px;
+   }
+   .webdev{
+    letter-spacing: 0px;
+    /* previously was given 0.5px */
+   }
+   .webdevbr{
+    display: block;
+   }
+   .webdev h1{
+    display: block;
+   }
+   /* second page(aboutme */
+   #aboutme{
+    height: 160vh;
+   }
+   .aboutmecontent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  
+   }
+   .aboutmecontent img{
+    position: relative;
+    left: 1px;
+   }
+   .aboutmecontent p{
+    width: 350px; 
+     position: relative;
+     left: 20px;
+   }
+   /* skills page */
+   #skills{
+    height: 120vh;
+   }
+   .boxcontainer{
+    display: grid;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(2,auto);
+ 
+
+   }
+   .box{
+    width: 200px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    background-color:transparent;
+   }
+   /* projects section */
+   #projects{
+    height: 180vh;
+   }
+   .cardcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+   }
+   /* given below card because in phone the paragrah is exiding the card */
+   .card p{
+    width: 300px;
+   }
+/* contact section */
+.contactcontainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 30px;
+}
+#contact{
+    height: 60vh;
+    /* previously was 35vh */
+}
+   
+  
+
+}

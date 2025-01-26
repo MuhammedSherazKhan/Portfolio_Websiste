@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+     
+      <!-- toggle(do after nav complete html and css) -->
+      <!-- bring font awesome cdn ,then toggle bar code from font awesome -->
+      <input type="checkbox" id="check" />
+      <label for="check" class="toggle"><i class="fa-solid fa-bars"></i></label>
+      <h1>Portfolio</h1>
+ 
+
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- home section -->
+    <div id="home">
+      <div class="homecontent">
+        <div class="homeleft">
+          <h3>Hi I'm <span class="colored">Sheraz</span></h3>
+          <div class="webdev">
+            <h1><div><span class="colored">W</span>EB &nbsp; <br class="webdevbr"> <span  class="colored">D</span>EVELOPER</h1>
+          </div>
+          <button><a href="Resume CV sheraz khan (1) (2) (3).pdf" download>Download CV</a></button>
+          <div class="icons">
+            <!-- got icons from font awsome -->
+            <a href="mailto:shaazkhan2003@gmail.com"><i class="fa-sharp fa-solid fa-envelope fa-beat" style="color:#a7a9be;"></i></a>
+            <a href="https://www.instagram.com/_shaaz__khan/"><i class="fa-brands fa-square-instagram fa-beat" style="color: #a7a9be;"></i></a>
+            <a href="https://github.com/MuhammedSherazKhan"><i class="fa-brands fa-github fa-beat"style="color:#a7a9be;"></i></a>
+            <a href="https://www.linkedin.com/in/sheraz-khan-51878b24a/"><i class="fa-brands fa-linkedin fa-beat" style="color: #a7a9be;"></i></a>
+          </div>
+        </div>
+        <div class="homeright">
+            <img src="WhatsApp Image 2024-05-21 at 15.16.54_e12a03be.jpg" alt="">
+        </div>
+       
+      </div>
+    </div>
+    <div id="aboutme">
+      <h1>About Me</h1>
+      <div class="aboutmecontent">
+        <img src="WhatsApp Image 2024-05-18 at 17.39.07_0f957d35.jpg" alt="">
+        <p>Hi, I’m Muhammad Sheraz Khan, a final-year Computer Science Engineering student with a passion for building innovative and user-friendly digital solutions. With a strong foundation in web development and hands-on experience in technologies like HTML, CSS, JavaScript, React, and Node.js, I thrive on solving complex problems through clean and efficient code.
+        <br>
+        I’ve worked on exciting projects, including a Gesture Palette/Air Canvas using Computer Vision, and a Gemini AI Clone Web Application, showcasing my ability to blend creativity with technical expertise. As a MERN stack trainee and an active contributor in workshops like "Internpreneur 4.0," I’ve honed my skills in full-stack development and public speaking.
+        <br>
+        When I’m not coding, you’ll find me leading teams on the volleyball court, engaging in debates, or exploring cutting-edge technologies. I’m driven by a desire to learn, create, and contribute to impactful projects that make a difference.
+         </p>
+      </div>
+    </div>
+    <div id="skills">
+      <h1>Skills:</h1>
+      <div class="boxcontainer">
+        <div class="box" ><img src="p-html.png" alt=""><h1 class="boxhead">HTML</h1></div>
+        <div class="box"><img src="p-css.png" alt=""><h1 class="boxhead">CSS</h1></div>
+        <div class="box" ><img src="p-bootstrap.png" alt=""><h1 class="box3head">Bootstrap</h1></div>
+        <div class="box"><img src="p-js.png" alt=""><h1 class="box4head">JS</h1></div>
+      </div>
+    </div>
+    <div id="projects">
+      <h1>Projects I have done</h1>
+      <div class="cardcontainer">
+        <div class="card1 card">
+          <img src="portfolio-project-1-img.png " alt="" height="200px" width="340px">
+          <div class="cardupper">web design</div> 
+          <h1>Royal Grand Hotel</h1>
+          <p >
+            Royal Grand Hotel is a simple static website .We can use this layout for buiding other websites...
+          </p>
+          <a href="">Read More -></a>
+        </div>
+        <div class="card2  card">
+          <img src="portfolio-project-2-img.png" alt="" height="200px" width="340px">
+          <div class="cardupper">Web design</div>
+          <h1>Happy Meals</h1>
+          <p >Happy Meals is the best-in-class food ordering page today.With interactive UI/UX and simple call to actions...</p>
+          <a href="">Read More -></a>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+     <h1>Contact me</h1>
+     <div class="contactcontainer">
+      <div><h3>Phone No.</h3> <span><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;7842461409</span></div>
+      <div><h3>E-mail</h3><span><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp;&nbsp;shaazkhan2003@gmail.com</span></div>
+      <div><h3>Address</h3><span><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Banjara hills,Roadno.3,Hyderabad,<br>India</span></div>
+     </div>
+
+    </div>
+  </body>
+</html>
